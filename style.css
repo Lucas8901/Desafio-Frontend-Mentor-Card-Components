@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background: hsl(233, 47%, 7%);
+  padding: 0rem;
+}
+
+.container{
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+.descricao{
+  background: hsl(244, 38%, 16%);
+  width:550px;
+  padding: 46px;
+}
+
+.descricao h2{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.descricao h2 span{
+  color:hsl(277, 64%, 61%) ;
+}
+
+.descricao p{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family:'Inter', sans-serif ;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.info{
+  display: flex;
+  gap: 80px;
+}
+
+.info span{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.info p{
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Inter';
+}
+
+@media(max-width:1120px){
+  .main{
+    height: 100%;
+  }
+
+  .descricao{
+    max-width: 100%;
+  }
+
+
+  .info{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+
+}
+
+@media(max-width:360px){
+.descricao h2{
+  font-size: 1.5rem;
+}
+}
+
